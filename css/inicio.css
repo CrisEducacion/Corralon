@@ -1,0 +1,32 @@
+
+body {
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(171, 180, 189);
+    width: auto;
+}
+
+body main{
+    display: flex;
+    flex-direction: column ;
+    width: auto;
+}
+#main-divUno-titulo{
+    background-color: aqua;
+    font-size: 20px;
+    width:8%;
+    height: auto;
+}
+
+#main-divDos-h1{
+    height: auto;
+}
+
+#main-divDos-h1 h1{
+    background-color: blue;
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+}
