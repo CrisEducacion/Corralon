@@ -26,20 +26,24 @@
     <br>
     <main>
         <div id="main-divUno-titulo"><h1>Inicio</h1></div>
-        <div id="main-divDos-h1"><h1>Elegi entre nuestros 
-            productos que mostramos a continuacion</h1></div>
+        <div id="main-divDos-h1"><h1>mandanos tus consultas completando el siguiente formulario</h1></div>
     </main>
-    <aside>
-        <p>Esto se trato en la clase 2</p>
-        <ol><li>carga</li>
-            <li>descarga</li>
-            <li></li>
-        </ol>
-        
-
-    </aside>
-    <br>
-
-    
+    <form name="FormularioCorrlon"  action="https://formspree.io/f/xeogwldn" class="contacto" method="post" >
+        <div>
+            <input type="text" name="nombre" placeholder="Nombre">
+        </div>
+        <div>
+            <input type="number" name="edad" placeholder="Edad: ">
+        </div>
+        <div>
+            <input type="email" name="correo electronico" placeholder="Correo Electr: ">
+        </div>
+        <div>
+            <textarea type="text" name="comentario" cols="50" rows="5" placeholder="Comentario"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar" placeholder="Enviar">            
+        </div>
+    </form>
 </body>
 </html>
