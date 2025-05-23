@@ -1,12 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    margin: 10px;
     border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(171, 180, 189);
-    width: auto;
-    height: auto;
+    background-color: #c8c8c8;
+    background-color: hsl(360, 50%, 75%);
+    align-items: center;
 }
 
 body main{
@@ -14,6 +15,7 @@ body main{
     flex-direction: column ;
     width: auto;
 }
+
 #main-divUno-titulo{
     background-color: aqua;
     font-size: 20px;
@@ -30,4 +32,39 @@ body main{
     text-align: center;
     width: 50%;
     font-size: 30px;
+}
+
+body section{
+    justify-items: center;
+}
+
+.contacto{
+    background-color:#8f8fff;
+    background-color: hsl(25,25%30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 95%;
+    height: 200px;
+}
+
+.form-div{
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    width: 90%;
+    height: 30px;
+}
+
+input{
+    float: right;
+    width: 50%;
+    height: 30px;
+}
+.form-etiqueta{
+    border: 1px solid black;
+    width: 30%;
+    font-size: 30px;
+    height: 30px;
 }

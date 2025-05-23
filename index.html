@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TuCorralon-</title>
-    <link rel="stylesheet" href="css/reseña.css"  type="text/css">
+    <link rel="stylesheet" href="css/resena.css"  type="text/css">
     <link rel="stylesheet" href="css/inicio.css"  type="text/css">
 </head>
 <body>
@@ -28,22 +28,28 @@
         <div id="main-divUno-titulo"><h1>Inicio</h1></div>
         <div id="main-divDos-h1"><h1>mandanos tus consultas completando el siguiente formulario</h1></div>
     </main>
-    <form name="FormularioCorrlon"  action="https://formspree.io/f/xeogwldn" class="contacto" method="post" >
-        <div>
-            <input type="text" name="nombre" placeholder="Nombre">
+    <section>
+    <form name="FormularioCorralon"  action="https://formspree.io/f/xeogwldn" class="contacto" method="post">
+        <div class="form-div">
+            <label class="form-etiqueta">Nombre: <input type="text" name="nombre">
+            </label>
         </div>
-        <div>
-            <input type="number" name="edad" placeholder="Edad: ">
+        <div class="form-div">
+            <label class="form-etiqueta">Edad: <input type="number" name="edad">
+            </label>
         </div>
-        <div>
-            <input type="email" name="correo electronico" placeholder="Correo Electr: ">
+        <div class="form-div">
+            <label class="form-etiqueta">Correo Electronico: <input type="email" name="correo electronico">
+            </label>
         </div>
-        <div>
-            <textarea type="text" name="comentario" cols="50" rows="5" placeholder="Comentario"></textarea>
+        <div class="form-div">
+            <label class="form-etiqueta">Comentario: <textarea type="text" name="comentario" cols="50" rows="5"></textarea>
+            </label>
         </div>
-        <div>
+        <div class="form-div">
             <input type="submit" value="Enviar" placeholder="Enviar">            
         </div>
     </form>
+</section>
 </body>
 </html>
