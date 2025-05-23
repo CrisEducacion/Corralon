@@ -93,13 +93,18 @@ main{
 }
 
 #formulario{
+    background-color: #771599;
+    background-color: hsl(100, 50%, 75%);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 1px solid black;
+    align-items: center;
+    flex-direction: column;
     margin: auto;
     width: 95%;
-    height: 300px;
+    height: 400px;
+}
+
+#formulario p{
+    font-size: 30px;
 }
 
 #contacto{
@@ -107,23 +112,18 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    background-color:#8f8fff;
-    background-color: hsl(25,25%30%);
-    border: 1px solid black;
     width: 100%;
     height: auto;
 }
 
 .form-div{
     margin-top: 10px;
-    align-items: center;
-    text-align: center;
-    border: 1px solid black;
+    text-align: left;
     width: 90%;
 }
 
 .form-div label{
-    font-size: 30px;
+    font-size: 200%;
 }
 
 #nombre{
@@ -142,8 +142,7 @@ main{
 }
 
 #form-div-textarea{
-    text-align: center;
-    border: 1px solid black;
+    text-align: left;
     width: 90%;
     height: 100px;
 }
@@ -155,12 +154,11 @@ main{
     height: 60px;}
 
 #form-div-textarea textarea{
-    width: auto;
+    width: 50%;
     height: auto;
 }
 
 #form-div-enviar input{
-    border: 1px solid black;
     font-size: 20px;
-    width: 90px; 
+    width: 100px; 
 }
