@@ -10,46 +10,47 @@
     <header id="header">
         <img alt="logo-Corralon" src="img/Logo-04.png">
         <div id="header-divUno">
-            <h1 class="header-div-h1">Corralon</h1>
-            <h1 class="header-div-h1">Los Quirogas</h1>
+            <p class="header-divUno">Corralon</p>
+            <p class="header-divUno">Los Quirogas</p>
         </div>
         <div id="header-divDos">
-            <ul id="header-divDos-ul">
-                <li class="header-lista"> <a href="resena.html">Reseña</a></li>
-            </ul>
+            <p id="header-divDos-p"><a href="resena.html">Reseña</a></p>
         </div>
         <div id="header-divTres">
-            <h1>tus consultas al:</h1>
-            <h1>+54 11 2256-8897</h1>
+            <p>tus consultas al:</p>
+            <p>+54 11 2256-8897</p>
         </div>
     </header>
+    <hr>
     <br>
     <main>
         <div id="main-divUno-titulo"><h1>Inicio</h1></div>
-        <div id="main-divDos-h1"><h1>mandanos tus consultas completando el siguiente formulario</h1></div>
+        <div id="main-divDos-subtitulo"><h2>mandanos tus consultas completando el siguiente formulario</h2></div>
     </main>
-    <section>
-    <form name="FormularioCorralon"  action="https://formspree.io/f/xeogwldn" class="contacto" method="post">
+    <br>
+    
+    <div id="formulario">
+    <form name="FormularioCorralon"  action="https://formspree.io/f/xeogwldn" id="contacto" method="post">
         <div class="form-div">
-            <label class="form-etiqueta">Nombre: <input type="text" name="nombre">
-            </label>
+            <label for="nombre" class="form-etiqueta">Nombre: </label>
+             <input type="text" id="nombre" name="nombre"/>
         </div>
         <div class="form-div">
-            <label class="form-etiqueta">Edad: <input type="number" name="edad">
-            </label>
+            <label for="edad" class="form-etiqueta">Edad: </label>
+            <input type="text" id="edad" name="edad"/>
         </div>
         <div class="form-div">
-            <label class="form-etiqueta">Correo Electronico: <input type="email" name="correo electronico">
-            </label>
+            <label for="correo" class="form-etiqueta">Correo Electronico: </label>
+            <input type="email" id="correo" name="email"/>
         </div>
-        <div class="form-div">
-            <label class="form-etiqueta">Comentario: <textarea type="text" name="comentario" cols="50" rows="5"></textarea>
-            </label>
+        <div id="form-div-textarea">
+            <label for="textarea" class="form-etiqueta">Comentario: </label>
+            <textarea type="text" id="textarea" name="comentario" cols="50" rows="5"></textarea>
         </div>
-        <div class="form-div">
-            <input type="submit" value="Enviar" placeholder="Enviar">            
+        <div id="form-div-enviar">
+            <input type="submit" value="Enviar" placeholder="Enviar"/>            
         </div>
     </form>
-</section>
+</div>
 </body>
 </html>
