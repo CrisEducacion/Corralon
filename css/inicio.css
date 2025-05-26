@@ -1,13 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 body {
-    border: 2px solid black;
-    background-color: #c8c8c8;
-    background-color: hsl(360, 50%, 75%);
-    height: 1000px;
+    background-color: #35224d;
 }
 
 header{
@@ -59,6 +56,7 @@ header{
 
 #header-divDos-p a{
     color: gold;
+    text-decoration: none;
     font-size: 30px;
 }
 
@@ -72,39 +70,34 @@ header{
 }
 
 main{
-    display: flex;
     flex-direction: column ;
 }
 
-#main-divUno-titulo{
+#main-div-titulo{
     display: flex;
     justify-content: center;
-    background-color: aqua;
-    background-color: hsl(50,80%,60%);
+    background-color: #533577;
     font-size: 20px;
     width:100%;
     height: 45px;
 }
 
-#main-divDos-subtitulo{
-    background-color: goldenrod;
-    display: flex;
-    justify-content: center;
-}
-
 #formulario{
-    background-color: #771599;
-    background-color: hsl(100, 50%, 75%);
+    padding: 30px;
+    background-color: #7a5f9b;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: auto;
-    width: 95%;
+    width: 100%;
     height: 400px;
 }
 
 #formulario p{
     font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    text-align:center;
 }
 
 #contacto{
@@ -117,48 +110,66 @@ main{
 }
 
 .form-div{
-    margin-top: 10px;
-    text-align: left;
+    background-color: #3b2b50;
     width: 90%;
 }
 
-.form-div label{
-    font-size: 200%;
+#etiqueta-nombre{
+    margin-left: 32%;
+    font-size: 30px;
+    width: 40%;
+}
+#nombre{
+    width: 35%;
+    height: 30px;
+    border: 2px solid #771599;
 }
 
-#nombre{
-    text-align: right  ;
-    width: 30%;
-    height: 30px;
+#etiqueta-edad{
+    margin-left: 35%;
+    font-size: 30px;
+    width: 40%;
 }
 #edad{
-    text-align: right;
-    width: 25%;
+    width: 35%;
     height: 30px;
+    border: 2px solid #771599;
 }
+
+#etiqueta-correo{
+    margin-left: 21%;
+    font-size: 30px;
+    width: 40%;
+}
+
 #correo{
-    width: 30%;
+    width: 35%;
     height: 30px;
+    border: 2px solid #771599;
 }
 
 #form-div-textarea{
-    text-align: left;
     width: 90%;
-    height: 100px;
+    background-color: #3b2b50;
 }
 
-#form-div-textarea label{
-    
+#etiqueta-comentario{
+    background-color: #3b2b50;
     font-size: 30px;
+    margin-left: 29%;
     width: 50%;
     height: 60px;}
 
-#form-div-textarea textarea{
-    width: 50%;
-    height: auto;
+#textarea{
+    width: 100%;
+    width: 100px; 
 }
 
-#form-div-enviar input{
+#Enviar{
+    border: 1px solid black;
+    background-color: #3b2b50;
+    color: white ;
+    width: 100px;
+    height: 30px;
     font-size: 20px;
-    width: 100px; 
 }
