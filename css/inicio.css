@@ -8,29 +8,24 @@ body {
 }
 
 header{
-    margin: 20px 20px;
+    padding: 20px;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    width: auto;
-    height: 150px;
+    justify-content: baseline;
     gap: 15px;
+    width: 90%;
+    height: 150px;
     background: -webkit-linear-gradient( top , #771599, #d8d0d0);
 }
  
 #header img{
     border: 2px solid red;
-    display: flex;
-    width: 15%;
-    height: auto;
+    flex: 1;
 }
 
 #header-divUno{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     width: 25%;
-    gap: 3px;
 }
 
 .header-divUno{
@@ -39,15 +34,11 @@ header{
     font-size: 30px;
 }
 
-
 #header-divDos{
-    display: flex;
     align-content: center;
 }
 
 #header-divDos p{
-    display: flex;
-    text-align: center;
     justify-content: center;
     width: 100%;
     font-size: 30px;
@@ -61,8 +52,6 @@ header{
 }
 
 #header-divTres{
-    display: flex;
-    flex-direction: column;
     color: aliceblue;
     font-size: 35px;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -70,13 +59,13 @@ header{
 }
 
 main{
-    flex-direction: column ;
+    justify-content: center ;
 }
 
 #main-div-titulo{
-    display: flex;
-    justify-content: center;
+    justify-items: center;
     background-color: #533577;
+    color: aqua;
     font-size: 20px;
     width:100%;
     height: 45px;
@@ -119,7 +108,7 @@ main{
     font-size: 30px;
     width: 40%;
 }
-#nombre{
+#input-nombre{
     width: 35%;
     height: 30px;
     border: 2px solid #771599;
@@ -130,7 +119,7 @@ main{
     font-size: 30px;
     width: 40%;
 }
-#edad{
+#input-edad{
     width: 35%;
     height: 30px;
     border: 2px solid #771599;
@@ -142,7 +131,7 @@ main{
     width: 40%;
 }
 
-#correo{
+#input-correo{
     width: 35%;
     height: 30px;
     border: 2px solid #771599;
@@ -166,7 +155,7 @@ main{
 }
 
 #Enviar{
-    border: 1px solid black;
+    border: 3px solid black;
     background-color: #3b2b50;
     color: white ;
     width: 100px;
