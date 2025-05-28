@@ -4,74 +4,163 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: darkgreen;
+
+
+}
+
+#grid-padre{
+    display: grid;
+    grid-template-rows: 150px 1000px 100px;
+}
+
+
 header{
-    margin: 20px 20px;
+    grid-row: 1/2;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    width: auto;
-    height: 150px;
+    justify-content: baseline;
     gap: 15px;
-    background: -webkit-linear-gradient( top , #771599, #d8d0d0);
+    width: 100%;
+    background: -webkit-linear-gradient( top , rgb(29, 87, 29), rgb(40, 224, 40));
 }
  
-#header img{
+#header-grid-uno img{
     border: 2px solid red;
-    display: flex;
-    width: 15%;
-    height: auto;
- }
-
-#header-divUno{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 20%;
-    gap: 3px;
 }
 
-.header-div-h1{
-    color:white;
+#header-uno{
+    width: 30%;
+
     text-align: center;
+}
+
+.header-uno-p{
+    color:white;
+    font-size: 40px;
+}
+
+#header-dos{
+    text-align:end;
+    align-content: center;
+    width: 50%;
+}
+
+#header-dos-ul{
+    list-style: none;
+    width: 100%;
+    font-size: 30px;
+    height: 30px;
+}
+
+#header-dos-ul-lista a{
+    justify-content: end;
+    color: rgb(196, 224, 196);
+    text-decoration: none;
     font-size: 30px;
 }
 
-#header-divDos{
-    display: flex;
-    align-items: center;
-    width: 40%;
+section{
+    margin:20px; 
+    width: 200vh;
 }
 
-#header-divDos-ul{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    list-style: none;
-    width: 100%;
-    gap: 10px;
+#section-grid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr 1fr;
 }
+#section-uno{
+    background-color: rgb(29, 66, 29);
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
 
-.header-lista a{
-    color: yellow;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    color:aliceblue;
+    font-size: 30px;
+
 }
 
-#header-divTres{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    height: auto;
-    width: 30%;
+#section-dos-uno{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(55, 92, 18);
 }
 
-#header-divTres h1{
+#section-dos-uno img{
+    float: left;
+    border: 5px solid green;
+    width: 300px;
+    height: 300px;
+}
+
+#bolsa-arena{
     color: aliceblue;
-    font-size: 35px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow: rgb(150,150, 150) 5px 3px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#section-dos-dos{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(141, 228, 54);
+}
+
+#section-dos-dos img{
+    float: left;
+    border: 5px solid green;
+    width: 300px;
+    height: 300px;
+}
+
+.hierros{
+    font-size: 30px;
+}
+
+#section-tres-uno{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: rgb(55, 92, 18);
+}
+
+#section-tres-uno img{
+    float: left;
+    border: 5px solid green;
+    width: 300px;
+    height: 300px;
+}
+
+#section-tres-uno p{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+#section-tres-dos{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: rgb(141, 228, 54);
+}
+
+#section-tres-dos img{
+    float: left;
+    border: 5px solid green;
+    width: 300px;
+    height: 300px;
+}
+
+#section-tres-dos p{
+    font-size: 30px;
+}
+
+footer{
+    grid-row: 3/4;
+    border: 2px solid black;
+    background-color: rgb(12, 80, 12);
+    height: auto;
+    position: relative;
 }
